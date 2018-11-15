@@ -1,3 +1,3 @@
 <?php
 
-echo "Hello World AWS LUX";
+echo "Hello World AWS LUX new change :)";

@@ -227,12 +227,20 @@ Resources:
   Application:
     Type: AWS::CodeDeploy::Application
     Properties:
-      ApplicationName: !Ref AWS::StackName
+      ApplicationName: !If [
+        hasPrId,
+        !Sub "EphemeralDemoApp-${PrId}",
+        !Sub "EphemeralDemoApp"
+      ]
 
   DeploymentGroup:
     Type: 'AWS::CodeDeploy::DeploymentGroup'
     Properties:
-      ApplicationName: !Ref AWS::StackName
+      ApplicationName: !If [
+        hasPrId,
+        !Sub "EphemeralDemoApp-${PrId}",
+        !Sub "EphemeralDemoApp"
+      ]
       Ec2TagFilters:
         - Type: KEY_AND_VALUE
           Key: Name

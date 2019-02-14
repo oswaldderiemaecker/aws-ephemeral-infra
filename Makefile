@@ -1,9 +1,9 @@
 Profile?=aws-demo-pierre
 InfraBucket?=continuous-demo-aws-ephemeral-infra
-PackageBucket?=cphp-pierre-codedeploy-packages
-BaseDomain?=pierre.continuous.team
+PackageBucket?=cphp-oswald-codedeploy-packages
+BaseDomain?=oswald.continuous.team
 StackName?=continuous-demo-ephemeral-infra-$(PrId)
-KeyPair?=cphp-sandbox-pierre
+KeyPair?=cphp-sandbox-oswald
 AmiId?=ami-08596fdd2d5b64915
 
 main.template: stacks/*.yml

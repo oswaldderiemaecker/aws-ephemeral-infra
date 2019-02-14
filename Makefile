@@ -3,7 +3,7 @@ InfraBucket?=continuous-demo-oswald-aws-ephemeral-infra
 PackageBucket?=cphp-oswald-codedeploy-packages
 BaseDomain?=oswald.continuous.team
 StackName?=continuous-demo-ephemeral-infra-$(PrId)
-KeyPair?=cphp-sandbox-oswald
+KeyPair?=continuousdemo-eu-west-1
 AmiId?=ami-08596fdd2d5b64915
 
 main.template: stacks/*.yml

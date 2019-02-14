@@ -1,5 +1,5 @@
 Profile?=aws-demo-pierre
-InfraBucket?=continuous-demo-aws-ephemeral-infra
+InfraBucket?=continuous-demo-oswald-aws-ephemeral-infra
 PackageBucket?=cphp-oswald-codedeploy-packages
 BaseDomain?=oswald.continuous.team
 StackName?=continuous-demo-ephemeral-infra-$(PrId)
